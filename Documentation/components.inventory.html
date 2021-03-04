@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module components.inventory</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="components.html"><font color="#ffffff">components</font></a>.inventory</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="tcod.html">tcod</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="components.inventory.html#Inventory">Inventory</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Inventory">class <strong>Inventory</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Inventory">Inventory</a>(capacity)<br>
+&nbsp;<br>
+Classe&nbsp;du&nbsp;composant&nbsp;inventaire&nbsp;du&nbsp;Player.<br>
+Elle&nbsp;contient&nbsp;un&nbsp;liste&nbsp;dont&nbsp;la&nbsp;taille&nbsp;ne&nbsp;doit&nbsp;pas&nbsp;depasser&nbsp;l'attribut&nbsp;capacite.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Inventory-__init__"><strong>__init__</strong></a>(self, capacity)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Inventory-add_item"><strong>add_item</strong></a>(self, item)</dt><dd><tt>Cette&nbsp;méthode&nbsp;ajoute&nbsp;un&nbsp;item&nbsp;ramasse&nbsp;a&nbsp;l'inventaire.<br>
+&nbsp;<br>
+:param&nbsp;item:&nbsp;objet&nbsp;de&nbsp;type&nbsp;Item&nbsp;a&nbsp;ajouter&nbsp;a&nbsp;l'inventaire<br>
+:return:&nbsp;liste&nbsp;de&nbsp;dictionnaires&nbsp;décrivant&nbsp;les&nbsp;resultats&nbsp;de&nbsp;la&nbsp;tentative&nbsp;d'ajout.</tt></dd></dl>
+
+<dl><dt><a name="Inventory-drop_item"><strong>drop_item</strong></a>(self, item)</dt><dd><tt>Quand&nbsp;on&nbsp;supprime&nbsp;un&nbsp;item&nbsp;de&nbsp;l'inventaire,&nbsp;le&nbsp;joueur&nbsp;le&nbsp;redépose&nbsp;en&nbsp;fait&nbsp;sur<br>
+le&nbsp;carte,&nbsp;a&nbsp;la&nbsp;position&nbsp;ou&nbsp;il&nbsp;se&nbsp;trouve.<br>
+:param&nbsp;item:&nbsp;Item&nbsp;à&nbsp;déposer<br>
+:return:&nbsp;liste&nbsp;de&nbsp;dictionnaires&nbsp;décrivant&nbsp;les&nbsp;résultats&nbsp;de&nbsp;la&nbsp;suppresion.</tt></dd></dl>
+
+<dl><dt><a name="Inventory-remove_item"><strong>remove_item</strong></a>(self, item)</dt><dd><tt>Méthode&nbsp;de&nbsp;suppression&nbsp;d'un&nbsp;item&nbsp;de&nbsp;l'inventaire.<br>
+&nbsp;<br>
+:param&nbsp;item:&nbsp;item&nbsp;à&nbsp;supprimer<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Inventory-use"><strong>use</strong></a>(self, item_entity, **kwargs)</dt><dd><tt>Cette&nbsp;méthode&nbsp;va&nbsp;utiliser&nbsp;un&nbsp;item&nbsp;et&nbsp;le&nbsp;supprimer&nbsp;de&nbsp;l'inventaire.<br>
+&nbsp;<br>
+:param&nbsp;item_entity:&nbsp;instance&nbsp;de&nbsp;Entity&nbsp;qui&nbsp;a&nbsp;un&nbsp;composant&nbsp;item.&nbsp;C'est&nbsp;cet&nbsp;item&nbsp;qui&nbsp;sera&nbsp;utilisé<br>
+:param&nbsp;kwargs:<br>
+:return:&nbsp;liste&nbsp;de&nbsp;dictionnaires&nbsp;décrivant&nbsp;les&nbsp;resultats&nbsp;de&nbsp;la&nbsp;tentative&nbsp;d'utilisation.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

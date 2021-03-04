@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module render_functions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>render_functions</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="tcod.html">tcod</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="enum.html#Enum">enum.Enum</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="render_functions.html#RenderOrder">RenderOrder</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RenderOrder">class <strong>RenderOrder</strong></a>(<a href="enum.html#Enum">enum.Enum</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#RenderOrder">RenderOrder</a>(value,&nbsp;names=None,&nbsp;*,&nbsp;module=None,&nbsp;qualname=None,&nbsp;type=None,&nbsp;start=1)<br>
+&nbsp;<br>
+Enumération&nbsp;pour&nbsp;geree&nbsp;l'ordre&nbsp;dans&nbsp;lequel&nbsp;les&nbsp;entités&nbsp;sont&nbsp;déssinées&nbsp;sur&nbsp;la&nbsp;carte.<br>
+Les&nbsp;acteurs&nbsp;(Player&nbsp;et&nbsp;Monster&nbsp;vivants)&nbsp;ont&nbsp;la&nbsp;priorité&nbsp;sur&nbsp;les&nbsp;item&nbsp;(Items)&nbsp;et&nbsp;les&nbsp;entités&nbsp;mortes.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="render_functions.html#RenderOrder">RenderOrder</a></dd>
+<dd><a href="enum.html#Enum">enum.Enum</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>ACTOR</strong> = &lt;RenderOrder.ACTOR: 3&gt;</dl>
+
+<dl><dt><strong>CORPSE</strong> = &lt;RenderOrder.CORPSE: 1&gt;</dl>
+
+<dl><dt><strong>ITEM</strong> = &lt;RenderOrder.ITEM: 2&gt;</dl>
+
+<hr>
+Data descriptors inherited from <a href="enum.html#Enum">enum.Enum</a>:<br>
+<dl><dt><strong>name</strong></dt>
+<dd><tt>The&nbsp;name&nbsp;of&nbsp;the&nbsp;Enum&nbsp;member.</tt></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+<dd><tt>The&nbsp;value&nbsp;of&nbsp;the&nbsp;Enum&nbsp;member.</tt></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="enum.html#EnumMeta">enum.EnumMeta</a>:<br>
+<dl><dt><strong>__members__</strong></dt>
+<dd><tt>Returns&nbsp;a&nbsp;mapping&nbsp;of&nbsp;member&nbsp;name-&gt;value.<br>
+&nbsp;<br>
+This&nbsp;mapping&nbsp;lists&nbsp;all&nbsp;enum&nbsp;members,&nbsp;including&nbsp;aliases.&nbsp;Note&nbsp;that&nbsp;this<br>
+is&nbsp;a&nbsp;read-only&nbsp;view&nbsp;of&nbsp;the&nbsp;internal&nbsp;mapping.</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-clear_all"><strong>clear_all</strong></a>(con, entities)</dt><dd><tt>Efface&nbsp;toute&nbsp;les&nbsp;entités&nbsp;d'une&nbsp;liste&nbsp;donnée.<br>
+&nbsp;<br>
+:param&nbsp;con:&nbsp;console&nbsp;dans&nbsp;laquelle&nbsp;ont&nbsp;veut&nbsp;dessiner<br>
+:param&nbsp;entities:&nbsp;liste&nbsp;des&nbsp;entités&nbsp;à&nbsp;effacer</tt></dd></dl>
+ <dl><dt><a name="-clear_entity"><strong>clear_entity</strong></a>(con, entity)</dt><dd><tt>Effacer&nbsp;le&nbsp;caractère&nbsp;qui&nbsp;représente&nbsp;cet&nbsp;objet.&nbsp;On&nbsp;remplace&nbsp;le&nbsp;caractère&nbsp;par&nbsp;un&nbsp;espace</tt></dd></dl>
+ <dl><dt><a name="-draw_entity"><strong>draw_entity</strong></a>(con, entity, fov_map)</dt><dd><tt>Dessine&nbsp;une&nbsp;entité&nbsp;dans&nbsp;une&nbsp;console&nbsp;si&nbsp;elle&nbsp;est&nbsp;dans&nbsp;le&nbsp;champ&nbsp;de&nbsp;vision<br>
+&nbsp;<br>
+:param&nbsp;con:&nbsp;console&nbsp;dans&nbsp;laquelle&nbsp;ont&nbsp;veut&nbsp;dessiner<br>
+:param&nbsp;entity:&nbsp;entité&nbsp;à&nbsp;dessiner<br>
+:param&nbsp;fov_map:&nbsp;carte&nbsp;représentant&nbsp;le&nbsp;champ&nbsp;de&nbsp;vision</tt></dd></dl>
+ <dl><dt><a name="-get_names_under_mouse"><strong>get_names_under_mouse</strong></a>(mouse, entities, fov_map)</dt><dd><tt>Cette&nbsp;fonction&nbsp;retourne&nbsp;le&nbsp;nom&nbsp;de&nbsp;l'entité&nbsp;pointée&nbsp;par&nbsp;la&nbsp;souris.</tt></dd></dl>
+ <dl><dt><a name="-render_all"><strong>render_all</strong></a>(con, panel, entities, player, game_map, fov_map, fov_recompute, message_log, screen_width, screen_height, bar_width, panel_height, panel_y, mouse, colors, game_state)</dt><dd><tt>Cette&nbsp;fonction&nbsp;s'occupe&nbsp;de&nbsp;l'affichage&nbsp;et&nbsp;de&nbsp;la&nbsp;mise&nbsp;à&nbsp;jour&nbsp;de&nbsp;tout&nbsp;ce&nbsp;qui&nbsp;est&nbsp;visible&nbsp;pendant&nbsp;le&nbsp;déroulement&nbsp;du&nbsp;jeu.</tt></dd></dl>
+ <dl><dt><a name="-render_bar"><strong>render_bar</strong></a>(panel, x, y, total_width, name, value, maximum, bar_color, back_color)</dt><dd><tt>Defini&nbsp;une&nbsp;zone&nbsp;d'écriture&nbsp;où&nbsp;on&nbsp;affichechera&nbsp;les&nbsp;messages&nbsp;pendant&nbsp;qu'on&nbsp;joue.<br>
+&nbsp;<br>
+:param&nbsp;panel:<br>
+:param&nbsp;x:<br>
+:param&nbsp;y:<br>
+:param&nbsp;total_width:<br>
+:param&nbsp;name:<br>
+:param&nbsp;value:<br>
+:param&nbsp;maximum:<br>
+:param&nbsp;bar_color:<br>
+:param&nbsp;back_color:</tt></dd></dl>
+</td></tr></table>
+</body></html>

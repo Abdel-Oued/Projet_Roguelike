@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module entity</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>entity</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="tcod.html">tcod</a><br>
+</td><td width="25%" valign=top><a href="math.html">math</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="entity.html#Entity">Entity</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="entity.html#Item">Item</a>
+</font></dt><dt><font face="helvetica, arial"><a href="entity.html#Monster">Monster</a>
+</font></dt><dt><font face="helvetica, arial"><a href="entity.html#Player">Player</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Entity">class <strong>Entity</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Entity">Entity</a>(x,&nbsp;y,&nbsp;char,&nbsp;color,&nbsp;name,&nbsp;render_order=&amp;lt;RenderOrder.CORPSE:&nbsp;1&amp;gt;,&nbsp;blocks=False)<br>
+&nbsp;<br>
+Toutes&nbsp;les&nbsp;entités&nbsp;(objets&nbsp;à&nbsp;rammaser,&nbsp;joueur&nbsp;et&nbsp;monstres)&nbsp;sont&nbsp;des&nbsp;instances&nbsp;de&nbsp;cette&nbsp;classe.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Entity-__init__"><strong>__init__</strong></a>(self, x, y, char, color, name, render_order=&lt;RenderOrder.CORPSE: 1&gt;, blocks=False)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Entity-distance"><strong>distance</strong></a>(self, x, y)</dt><dd><tt>Cette&nbsp;méthode&nbsp;retourne&nbsp;la&nbsp;distance&nbsp;entre&nbsp;l'entité&nbsp;et&nbsp;une&nbsp;position&nbsp;donnée.</tt></dd></dl>
+
+<dl><dt><a name="Entity-distance_to"><strong>distance_to</strong></a>(self, other)</dt><dd><tt>Cette&nbsp;méthode&nbsp;retourne&nbsp;la&nbsp;distance&nbsp;entre&nbsp;l'entité&nbsp;et&nbsp;une&nbsp;autre&nbsp;entité&nbsp;donnée.<br>
+&nbsp;<br>
+:param&nbsp;other:&nbsp;<a href="#Entity">Entity</a><br>
+:return:&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="Entity-move"><strong>move</strong></a>(self, dx, dy)</dt><dd><tt>Cette&nbsp;méthode&nbsp;déplace&nbsp;l'entité.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Item">class <strong>Item</strong></a>(<a href="entity.html#Entity">Entity</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Item">Item</a>(x,&nbsp;y,&nbsp;char,&nbsp;color,&nbsp;name,&nbsp;render_order,&nbsp;item)<br>
+&nbsp;<br>
+Un&nbsp;<a href="#Item">Item</a>&nbsp;est&nbsp;une&nbsp;entité&nbsp;à&nbsp;ramasser.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="entity.html#Item">Item</a></dd>
+<dd><a href="entity.html#Entity">Entity</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Item-__init__"><strong>__init__</strong></a>(self, x, y, char, color, name, render_order, item)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="entity.html#Entity">Entity</a>:<br>
+<dl><dt><a name="Item-distance"><strong>distance</strong></a>(self, x, y)</dt><dd><tt>Cette&nbsp;méthode&nbsp;retourne&nbsp;la&nbsp;distance&nbsp;entre&nbsp;l'entité&nbsp;et&nbsp;une&nbsp;position&nbsp;donnée.</tt></dd></dl>
+
+<dl><dt><a name="Item-distance_to"><strong>distance_to</strong></a>(self, other)</dt><dd><tt>Cette&nbsp;méthode&nbsp;retourne&nbsp;la&nbsp;distance&nbsp;entre&nbsp;l'entité&nbsp;et&nbsp;une&nbsp;autre&nbsp;entité&nbsp;donnée.<br>
+&nbsp;<br>
+:param&nbsp;other:&nbsp;<a href="#Entity">Entity</a><br>
+:return:&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="Item-move"><strong>move</strong></a>(self, dx, dy)</dt><dd><tt>Cette&nbsp;méthode&nbsp;déplace&nbsp;l'entité.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="entity.html#Entity">Entity</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Monster">class <strong>Monster</strong></a>(<a href="entity.html#Entity">Entity</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Monster">Monster</a>(x,&nbsp;y,&nbsp;char,&nbsp;color,&nbsp;name,&nbsp;render_order,&nbsp;blocks,&nbsp;fighter,&nbsp;ai)<br>
+&nbsp;<br>
+Un&nbsp;<a href="#Monster">Monster</a>&nbsp;est&nbsp;une&nbsp;entité&nbsp;doté&nbsp;d'une&nbsp;intelligence&nbsp;et&nbsp;pouvant&nbsp;se&nbsp;battre.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="entity.html#Monster">Monster</a></dd>
+<dd><a href="entity.html#Entity">Entity</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Monster-__init__"><strong>__init__</strong></a>(self, x, y, char, color, name, render_order, blocks, fighter, ai)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Monster-move_astar"><strong>move_astar</strong></a>(self, target, entities, game_map)</dt><dd><tt>Cette&nbsp;fonction&nbsp;permet&nbsp;aux&nbsp;monstres&nbsp;d'avoir&nbsp;des&nbsp;déplacements&nbsp;plus&nbsp;sophistiqués.<br>
+Ils&nbsp;peuvent&nbsp;se&nbsp;déplacer&nbsp;en&nbsp;diagonal.</tt></dd></dl>
+
+<dl><dt><a name="Monster-move_towards"><strong>move_towards</strong></a>(self, target_x, target_y, game_map, entities)</dt><dd><tt>Cette&nbsp;fonction&nbsp;est&nbsp;utilisée&nbsp;par&nbsp;les&nbsp;monstres&nbsp;pour&nbsp;se&nbsp;rapprocher&nbsp;de&nbsp;leur&nbsp;cible.<br>
+Le&nbsp;monstre&nbsp;se&nbsp;déplace&nbsp;horizontalement&nbsp;d'un&nbsp;pixel&nbsp;si&nbsp;la&nbsp;cible&nbsp;a&nbsp;la&nbsp;même&nbsp;ordonnee&nbsp;y<br>
+et&nbsp;verticalement&nbsp;d'un&nbsp;pixel&nbsp;si&nbsp;la&nbsp;cible&nbsp;a&nbsp;la&nbsp;même&nbsp;abscisse.<br>
+Dans&nbsp;le&nbsp;cas&nbsp;contraire&nbsp;ils&nbsp;ne&nbsp;bouge&nbsp;pas.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="entity.html#Entity">Entity</a>:<br>
+<dl><dt><a name="Monster-distance"><strong>distance</strong></a>(self, x, y)</dt><dd><tt>Cette&nbsp;méthode&nbsp;retourne&nbsp;la&nbsp;distance&nbsp;entre&nbsp;l'entité&nbsp;et&nbsp;une&nbsp;position&nbsp;donnée.</tt></dd></dl>
+
+<dl><dt><a name="Monster-distance_to"><strong>distance_to</strong></a>(self, other)</dt><dd><tt>Cette&nbsp;méthode&nbsp;retourne&nbsp;la&nbsp;distance&nbsp;entre&nbsp;l'entité&nbsp;et&nbsp;une&nbsp;autre&nbsp;entité&nbsp;donnée.<br>
+&nbsp;<br>
+:param&nbsp;other:&nbsp;<a href="#Entity">Entity</a><br>
+:return:&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="Monster-move"><strong>move</strong></a>(self, dx, dy)</dt><dd><tt>Cette&nbsp;méthode&nbsp;déplace&nbsp;l'entité.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="entity.html#Entity">Entity</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Player">class <strong>Player</strong></a>(<a href="entity.html#Entity">Entity</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Player">Player</a>(x,&nbsp;y,&nbsp;char,&nbsp;color,&nbsp;name,&nbsp;render_order,&nbsp;blocks,&nbsp;fighter,&nbsp;inventory)<br>
+&nbsp;<br>
+Un&nbsp;<a href="#Player">Player</a>&nbsp;est&nbsp;une&nbsp;entité&nbsp;pouvant&nbsp;se&nbsp;battre.&nbsp;Il&nbsp;possède&nbsp;en&nbsp;plus&nbsp;un&nbsp;composant&nbsp;Inventaire&nbsp;et&nbsp;un&nbsp;score.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="entity.html#Player">Player</a></dd>
+<dd><a href="entity.html#Entity">Entity</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Player-__init__"><strong>__init__</strong></a>(self, x, y, char, color, name, render_order, blocks, fighter, inventory)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="entity.html#Entity">Entity</a>:<br>
+<dl><dt><a name="Player-distance"><strong>distance</strong></a>(self, x, y)</dt><dd><tt>Cette&nbsp;méthode&nbsp;retourne&nbsp;la&nbsp;distance&nbsp;entre&nbsp;l'entité&nbsp;et&nbsp;une&nbsp;position&nbsp;donnée.</tt></dd></dl>
+
+<dl><dt><a name="Player-distance_to"><strong>distance_to</strong></a>(self, other)</dt><dd><tt>Cette&nbsp;méthode&nbsp;retourne&nbsp;la&nbsp;distance&nbsp;entre&nbsp;l'entité&nbsp;et&nbsp;une&nbsp;autre&nbsp;entité&nbsp;donnée.<br>
+&nbsp;<br>
+:param&nbsp;other:&nbsp;<a href="#Entity">Entity</a><br>
+:return:&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="Player-move"><strong>move</strong></a>(self, dx, dy)</dt><dd><tt>Cette&nbsp;méthode&nbsp;déplace&nbsp;l'entité.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="entity.html#Entity">Entity</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-get_blocking_entities_at_location"><strong>get_blocking_entities_at_location</strong></a>(entities, destination_x, destination_y)</dt><dd><tt>La&nbsp;fonction&nbsp;parcourt&nbsp;les&nbsp;entités,&nbsp;et&nbsp;si&nbsp;l'une&nbsp;d'elles&nbsp;"bloque"&nbsp;et&nbsp;se&nbsp;trouve<br>
+à&nbsp;l'emplacement&nbsp;x&nbsp;et&nbsp;y&nbsp;que&nbsp;nous&nbsp;avons&nbsp;spécifié,&nbsp;nous&nbsp;la&nbsp;renvoyons.</tt></dd></dl>
+</td></tr></table>
+</body></html>
